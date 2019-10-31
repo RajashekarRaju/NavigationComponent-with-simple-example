@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Navigator</string>
+    <string name="settings">Settings</string>
+    <string name="direction_arrow_back">Arrow back</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

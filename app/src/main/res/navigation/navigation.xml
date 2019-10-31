@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.developersbreach.navigator.ListFragment"
+        android:label="Navigator"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.developersbreach.navigator.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="detailFragmentArguments"
+            app:argType="com.developersbreach.navigator.Navigator" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.developersbreach.navigator.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
